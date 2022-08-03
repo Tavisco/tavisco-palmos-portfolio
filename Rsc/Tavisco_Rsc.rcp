@@ -49,8 +49,8 @@ FORM ID MainForm AT (0 0 160 160)
 	MENUID MainMenuBar
 BEGIN
 	TITLE "Tavisco"
-    	LABEL "Here are my softwares" ID MainTitleLabel   AT (16 18) FONT 2
-	LABEL "Click in each icon for details" ID MainSubtitleLabel  AT (23 34)
+    LABEL "Here are my softwares" ID MainTitleLabel   AT (16 18) FONT 2
+	LABEL "Click on each icon for details" ID MainSubtitleLabel  AT (23 34)
 	BUTTON "" ID MainSORGButton  AT (2 57 23 23) GRAPHICAL BITMAPID SORGBitmapFamily SELECTEDBITMAPID SORGBitmapFamily 
 	LABEL "S.O.R.G." ID MainSORGTitleLabel  AT (28 56) FONT 1
 	LABEL "Keep students organized" ID MainSORGSubtitleLabel  AT (28 67)
@@ -62,10 +62,10 @@ FORM ID AboutForm AT (2 2 156 156)
     DEFAULTBTNID AboutOKButton
 BEGIN
 	TITLE "About Tavisco"
-	BUTTON "OK" ID AboutOKButton AT (2 142 40 12)
-	FORMBITMAP AT (105 105) BITMAP TaviscoBitmapFamily
-	LABEL "I'm a Brazilian software developer\rborn in the late 90's that\rre-discoverd the Palm world\rin 2021, and since then I'm improving\rmy skills developing software for\rthe platform." ID AboutDescriptionLabel  AT (5 16)
-	LABEL "I have a blog on:\rhttps://tavisco.dev" ID AboutBlogTitleLabel   AT (5 86)
+	BUTTON "OK" ID AboutOKButton AT (55 142 40 12)
+	FORMBITMAP AT (50 86) BITMAP TaviscoBitmapFamily
+	LABEL "I'm a Brazilian software developer\rborn in the late 90's that\rrediscovered the Palm world in 2021,\rand since then, I'm improving my\rprogramming skills developing\rsoftware for the platform." ID AboutDescriptionLabel  AT (5 16)
+	LABEL "V: 1.0.0" ID AboutVersionLabel  AT (125 145)
 END
 
 FORM ID SORGForm  AT ( 0 0 160 160 )
@@ -76,7 +76,7 @@ BEGIN
 	BUTTON "Back" ID SorgBackButton  AT (2 146 AUTO AUTO)
 	BUTTON "" ID SorgLaunchButton  AT (128 125 23 23) BITMAPID SORGBitmapFamily SELECTEDBITMAPID SORGBitmapFamily GRAPHICAL
 	LABEL "Launch!" ID SorgLaunchLabel  AT (120 149) FONT 1
-	LABEL "S.O.R.G. or Student Organizer is a\r software to help students of all \r levels keep track of their classes and\r due tasks." ID SorgDescLabel  AT (3 17)
-	LABEL "- Add multiple classes\r- See in a glance which is the\rcurrent, and next class.\r- Assing homeworks to classes\r- See in a glance if there is\r   homework due tomorrow." ID SorgDesc2Label  AT (2 76)
+	LABEL "S.O.R.G. or Student Organizer is a\r software to help students of all \r levels to keep track of their classes\r and due tasks." ID SorgDescLabel  AT (3 17)
+	LABEL "- Add multiple classes.\r- See in a glance which is the\rcurrent, and next class.\r- Assign homeworks to classes.\r- See in a glance if there is\r   homework due tomorrow." ID SorgDesc2Label  AT (2 76)
 	LABEL "Highlights:" AUTOID AT (3 64) FONT 1
 END

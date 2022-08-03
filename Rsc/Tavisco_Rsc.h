@@ -5,7 +5,7 @@
 #define SorgLaunchButton 1019
 #define SorgBackButton 1018
 #define SORGForm 1017
-#define AboutBlogTitleLabel 1016
+#define AboutVersionLabel 1016
 #define AboutDescriptionLabel 1015
 #define AboutOKButton 1014
 #define AboutForm 1013
