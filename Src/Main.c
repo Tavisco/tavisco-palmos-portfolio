@@ -1,7 +1,7 @@
 #include <PalmOS.h>
 
 #include "Tavisco.h"
-#include "Tavisco_Rsc.h"
+#include "Rsc/Tavisco_Rsc.h"
 
 /*
  * FUNCTION: MainFormDoCommand

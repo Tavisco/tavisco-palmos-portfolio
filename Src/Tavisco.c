@@ -14,7 +14,7 @@
 #include <PalmOSGlue.h>
 
 #include "Tavisco.h"
-#include "Tavisco_Rsc.h"
+#include "Rsc/Tavisco_Rsc.h"
 
 /*********************************************************************
  * Entry Points
@@ -269,4 +269,18 @@ UInt32 PilotMain(UInt16 cmd, MemPtr cmdPBP, UInt16 launchFlags)
 	}
 
 	return errNone;
+}
+
+UInt32 __attribute__((section(".vectors"))) __Startup__(void)
+{
+	SysAppInfoPtr appInfoP;
+	void *prevGlobalsP;
+	void *globalsP;
+	UInt32 ret;
+
+	SysAppStartup(&appInfoP, &prevGlobalsP, &globalsP);
+	ret = PilotMain(appInfoP->cmd, appInfoP->cmdPBP, appInfoP->launchFlags);
+	SysAppExit(appInfoP, prevGlobalsP, globalsP);
+
+	return ret;
 }
