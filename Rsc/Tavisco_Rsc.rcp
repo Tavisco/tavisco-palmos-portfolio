@@ -8,6 +8,7 @@ DATA "code" ID 1 "code0001.bin"
 GENERATEHEADER "Rsc/Tavisco_Rsc.h"
 
 APPLICATIONICONNAME ID 1000 "-Tavisco"
+VERSION ID 1 "1.0"
 
 RESETAUTOID 1000
 
@@ -65,7 +66,7 @@ BEGIN
 	BUTTON "OK" ID AboutOKButton AT (55 142 40 12)
 	FORMBITMAP AT (50 86) BITMAP TaviscoBitmapFamily
 	LABEL "I'm a Brazilian software developer\rborn in the late 90's that\rrediscovered the Palm world in 2021,\rand since then, I'm improving my\rprogramming skills developing\rsoftware for the platform." ID AboutDescriptionLabel  AT (5 16)
-	LABEL "V: 1.0.0" ID AboutVersionLabel  AT (125 145)
+	LABEL "V: 1.0" ID AboutVersionLabel  AT (132 145)
 END
 
 FORM ID SORGForm  AT ( 0 0 160 160 )
