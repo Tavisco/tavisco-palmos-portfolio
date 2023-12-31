@@ -1,11 +1,11 @@
-TOOLCHAIN		?=	/home/tavisco/Palm/palmdev_V3/buildtools/toolchain/bin
-SDK			?=	/home/tavisco/Palm/palmdev_V3/buildtools/palm-os-sdk-master/sdk-5r3/include
-PILRC			=	/home/tavisco/Palm/palmdev_V3/buildtools/pilrc3_3_unofficial/bin/pilrc
+TOOLCHAIN		?=	/home/tavisco/palm/palmdev_V3/buildtools/toolchain/bin
+SDK				?=	/home/tavisco/palm/palmdev_V3/buildtools/palm-os-sdk-master/sdk-5r3/include
+PILRC			?=	/home/tavisco/palm/palmdev_V3/buildtools/pilrc3_3_unofficial/bin/pilrc
 CC			=	$(TOOLCHAIN)/m68k-none-elf-gcc
 LD			=	$(TOOLCHAIN)/m68k-none-elf-gcc
 OBJCOPY			=	$(TOOLCHAIN)/m68k-none-elf-objcopy
-COMMON			=	-Wno-multichar -funsafe-math-optimizations -Os -m68000 -mno-align-int -mpcrel -fpic -fshort-enums -mshort
-WARN			=	-Wsign-compare -Wextra -Wall -Werror -Wno-unused-parameter -Wno-old-style-declaration -Wno-unused-function -Wno-unused-variable -Wno-error=cpp -Wno-error=switch
+COMMON			=	-Wmissing-prototypes -Wstrict-prototypes -Wall -Wextra -Werror -Wno-multichar -funsafe-math-optimizations -Os -m68000 -mno-align-int -mpcrel -fpic -fshort-enums -mshort -fvisibility=hidden -Wno-attributes -g -ggdb3
+WARN			=	-Wsign-compare -Wextra -Wall -Wno-unused-parameter -Wno-old-style-declaration -Wno-unused-function -Wno-unused-variable -Wno-error=cpp -Wno-switch  -Wno-implicit-fallthrough
 LKR			=	linker.lkr
 CCFLAGS			=	$(LTO) $(WARN) $(COMMON) -I. -ffunction-sections -fdata-sections
 LDFLAGS			=	$(LTO) $(WARN) $(COMMON) -Wl,--gc-sections -Wl,-T $(LKR)

@@ -5,9 +5,6 @@
  *
  * This wizard-generated code is based on code adapted from the
  * stationery files distributed as part of the Palm OS SDK 4.0.
- *
- * Copyright (c) 1999-2000 Palm, Inc. or its subsidiaries.
- * All rights reserved.
  */
  
 #include <PalmOS.h>
@@ -271,6 +268,7 @@ UInt32 PilotMain(UInt16 cmd, MemPtr cmdPBP, UInt16 launchFlags)
 	return errNone;
 }
 
+UInt32 __attribute__((section(".vectors"))) __Startup__(void);
 UInt32 __attribute__((section(".vectors"))) __Startup__(void)
 {
 	SysAppInfoPtr appInfoP;
