@@ -103,6 +103,9 @@ static Boolean AppHandleEvent(EventType * eventP)
 			case SORGForm:
 				FrmSetEventHandler(frmP, SorgFormHandleEvent);
 				break;
+			case DexForm:
+				FrmSetEventHandler(frmP, PalmkedexFormHandleEvent);
+				break;
 		}
 		return true;
 	}

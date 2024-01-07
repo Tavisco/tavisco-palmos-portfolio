@@ -33,6 +33,13 @@ static Boolean MainFormDoCommand(UInt16 command)
 			handled = true;
 			break;
 		}
+
+		case MainDexButton:
+		{
+			FrmGotoForm(DexForm);
+			handled = true;
+			break;
+		}
 		
 		case MainAboutButton:
 		{
@@ -55,7 +62,7 @@ void OpenAboutDialog()
 	
 	/* Display the About Box. */
 	frmP = FrmInitForm (AboutForm);
-	FrmDoDialog (frmP);                    
+	FrmDoDialog (frmP);
 	FrmDeleteForm (frmP);
 }
 

@@ -51,10 +51,10 @@ BEGIN
 	TITLE "Tavisco"
 	LABEL "Here are my softwares" ID 1061   AT (16 18) FONT 2
 	LABEL "Click on each icon for details" ID 1062  AT (23 34)
-	BUTTON "" ID 1009  AT (2 57 15 20) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
+	BUTTON "" ID 1069  AT (2 57 23 23) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
 	LABEL "Palmkedex" ID 1063   AT (28 56) FONT 1
 	LABEL "The Pokedex in your Palm!" ID 1064  AT (28 67)
-	BUTTON "" ID 1065  AT (2 87 15 20) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
+	BUTTON "" ID 1065  AT (2 87 23 23) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
 	LABEL "S.O.R.G." ID 1066  AT (28 88) FONT 1
 	LABEL "Keep students organized" ID 1067  AT (28 98)
 	BUTTON "About me" ID 1068  AT (2 146 AUTO AUTO)
@@ -77,7 +77,7 @@ BEGIN
 	TITLE "S.O.R.G."
 	
 	BUTTON "Back" ID 1081  AT (2 146 AUTO AUTO)
-	BUTTON "" ID 1082  AT (128 125 15 20) BITMAPID 1002 SELECTEDBITMAPID 1002 GRAPHICAL
+	BUTTON "" ID 1082  AT (128 125 23 23) BITMAPID 1002 SELECTEDBITMAPID 1002 GRAPHICAL
 	LABEL "Launch!" ID 1083  AT (120 149) FONT 1
 	LABEL "S.O.R.G. or Student Organizer is a\r software to help students of all \r levels to keep track of their classes\r and due tasks." ID 1084  AT (3 17)
 	LABEL "- Add multiple classes.\r- See in a glance which is the\rcurrent, and next class.\r- Assign homeworks to classes.\r- See in a glance if there is\r   homework due tomorrow." ID 1085  AT (2 76)
@@ -90,7 +90,7 @@ BEGIN
 	TITLE "Palmkedex"
 	
 	BUTTON "Back" ID 1091  AT (2 146 AUTO AUTO)
-	BUTTON "" ID 1092  AT (128 125 15 20) BITMAPID 1002 SELECTEDBITMAPID 1002 GRAPHICAL
+	BUTTON "" ID 1092  AT (128 125 23 23) BITMAPID 1002 SELECTEDBITMAPID 1002 GRAPHICAL
 	LABEL "Launch!" ID 1093  AT (120 149) FONT 1
 	LABEL "Palmkedex brings the entire Pokedex\rto your Palm OS device!" 1094  AT (1 17)
 	LABEL "- Updated to Scarlet and Violet\r- Pokemon Sprites and Icons\r- Pokemon Description\r- Pokemon Stats and type chart\r- Keep track of seen and caught Pokes\r- QR Code generation to web Pokedex" 1095  AT (1 54)

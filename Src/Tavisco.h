@@ -27,4 +27,5 @@
 
 Boolean MainFormHandleEvent(EventType * eventP);
 Boolean SorgFormHandleEvent(EventType * eventP);
+Boolean PalmkedexFormHandleEvent(EventType * eventP);
 void OpenAboutDialog(void);
