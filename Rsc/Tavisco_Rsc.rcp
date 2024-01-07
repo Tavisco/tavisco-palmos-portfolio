@@ -7,12 +7,23 @@
 DATA "code" ID 1 "code0001.bin"
 
 APPLICATIONICONNAME ID 1000 "-Tavisco"
-VERSION ID 1 "1.0"
+VERSION ID 1 "1.1"
 
 RESETAUTOID 1000
 
-BITMAPFAMILY ID 1001  "Rsc/tavisco-2.bmp" "" "" "Rsc/tavisco-8.bmp"
+BITMAP ID 1001
+BEGIN
+	BITMAP "Rsc/tavisco-2.bmp" BPP 2 COMPRESS
+	BITMAP "Rsc/tavisco-8.bmp" BPP 8 COMPRESS
+	BITMAP "Rsc/tavisco-8-d144.bmp" BPP 8 DENSITY 144 COMPRESS
+END
+
 BITMAPFAMILY ID 1002   "Rsc/sorg-1.bmp" "" "" "Rsc/sorg-8.bmp" TRANSPARENT 0  0  0 TRANSPARENTINDEX 210
+
+BITMAP ID 1003
+BEGIN
+	BITMAP "Rsc/dex-8-d144.bmp" BPP 8 TRANSPARENTINDEX 210 COMPRESS DENSITY 144
+END
 
 ICONFAMILYEX
 BEGIN
@@ -51,10 +62,10 @@ BEGIN
 	TITLE "Tavisco"
 	LABEL "Here are my softwares" ID 1061   AT (16 18) FONT 2
 	LABEL "Click on each icon for details" ID 1062  AT (23 34)
-	BUTTON "" ID 1069  AT (2 57 23 23) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
+	BUTTON "" ID 1069  AT (2 57 23 23) GRAPHICAL BITMAPID 1003 SELECTEDBITMAPID 1003
 	LABEL "Palmkedex" ID 1063   AT (28 56) FONT 1
-	LABEL "The Pokedex in your Palm!" ID 1064  AT (28 67)
-	BUTTON "" ID 1065  AT (2 87 23 23) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002 
+	LABEL "The Pokedex in your Palm" ID 1064  AT (28 67)
+	BUTTON "" ID 1065  AT (2 87 23 23) GRAPHICAL BITMAPID 1002 SELECTEDBITMAPID 1002
 	LABEL "S.O.R.G." ID 1066  AT (28 88) FONT 1
 	LABEL "Keep students organized" ID 1067  AT (28 98)
 	BUTTON "About me" ID 1068  AT (2 146 AUTO AUTO)
@@ -68,7 +79,7 @@ BEGIN
 	BUTTON "OK" ID 1071 AT (55 142 40 12)
 	FORMBITMAP AT (50 86) BITMAP 1001
 	LABEL "I'm a Brazilian software developer\rborn in the late 90's that\rrediscovered the Palm world in 2021,\rand since then, I'm improving my\rprogramming skills developing\rsoftware for the platform." ID 1072  AT (5 16)
-	LABEL "V: 1.0" ID 1073  AT (132 145)
+	LABEL "V: 1.1" ID 1073  AT (132 145)
 END
 
 FORM ID 1080  AT ( 0 0 160 160 )
@@ -90,7 +101,7 @@ BEGIN
 	TITLE "Palmkedex"
 	
 	BUTTON "Back" ID 1091  AT (2 146 AUTO AUTO)
-	BUTTON "" ID 1092  AT (128 125 23 23) BITMAPID 1002 SELECTEDBITMAPID 1002 GRAPHICAL
+	BUTTON "" ID 1092  AT (128 125 23 23) BITMAPID 1003 SELECTEDBITMAPID 1003 GRAPHICAL
 	LABEL "Launch!" ID 1093  AT (120 149) FONT 1
 	LABEL "Palmkedex brings the entire Pokedex\rto your Palm OS device!" 1094  AT (1 17)
 	LABEL "- Updated to Scarlet and Violet\r- Pokemon Sprites and Icons\r- Pokemon Description\r- Pokemon Stats and type chart\r- Keep track of seen and caught Pokes\r- QR Code generation to web Pokedex" 1095  AT (1 54)

@@ -20,7 +20,7 @@ static Boolean PalmkedexFormDoCommand(UInt16 command)
 		case DexLaunchButton:
 		{
 			AppLaunchWithCommand(
-					sorgAppID, 
+					dexAppID, 
 					sysAppLaunchCmdNormalLaunch, NULL);
 		}
 	}

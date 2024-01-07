@@ -21,7 +21,8 @@
 #define appPrefID				0x00
 #define appPrefVersionNum		0x01
 
-#define sorgAppID               'UWSC'
+#define sorgAppID				'UWSC'
+#define dexAppID				'PKDX'
 
 #endif /* TAVISCO_H_ */
 
